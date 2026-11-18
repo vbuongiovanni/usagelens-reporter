@@ -1,0 +1,35 @@
+# Copy to <issues-repo>/.github/ISSUE_TEMPLATE/bug_report.yml
+# Used when a visitor reports a bug from the website without JavaScript (the "Report a bug" link).
+name: Bug report
+description: Something in the app isn't working as expected.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this. This repository is public: please don't include personal information.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open …
+        2. Tap …
+        3. See …
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      placeholder: 'e.g. 1.2.0 (Settings → About)'
+  - type: input
+    id: device
+    attributes:
+      label: Device and OS
+      placeholder: 'e.g. iPhone 16, iOS 26.1'

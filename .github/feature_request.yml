@@ -1,0 +1,25 @@
+# Copy to <issues-repo>/.github/ISSUE_TEMPLATE/feature_request.yml
+# Used when a visitor requests a feature from the website without JavaScript (the "Request a feature" link).
+name: Feature request
+description: Suggest an idea or improvement.
+labels: [feature-request]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the suggestion. This repository is public: please don't include personal information.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: Describe the problem or goal, not just the solution.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would help?
+  - type: input
+    id: version
+    attributes:
+      label: App version (optional)
